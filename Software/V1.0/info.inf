@@ -1,0 +1,8 @@
+[Assembly Info]
+--------------------
+Versioni FW. di allarmino disponibili :
+	-1.0V
+	-1.1V
+Compatibilita' Hardware solo con ESP32 DevKit
+
+[GitHubLink]https://github.com/AlessioSavelli/Allarmino

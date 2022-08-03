@@ -1,3 +1,5 @@
+Il file IDEPortable e' spezzettato in file piu' piccoli da 100MB e deve necessariamente essere ricomposto una volta che si e' fatto il pull del progetto
+
 Licenza MIT
 Copyright (c) 2022 Alessio Savelli FuturaGroup
 

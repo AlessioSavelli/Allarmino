@@ -1,0 +1,1 @@
+Il file .zip e' spezzato in parti piu' piccole di 100MB

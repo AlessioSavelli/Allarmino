@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "Espanzione_01-rescue")(type "Legacy")(uri "${KIPRJMOD}/Espanzione_01-rescue.lib")(options "")(descr ""))
+)

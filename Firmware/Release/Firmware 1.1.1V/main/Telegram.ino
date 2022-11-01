@@ -55,11 +55,11 @@ void telegram_loop() {
         trg_output2 = true;
         new_st_output2 = true; // modifica lo stato dell'uscita
       } else if ((msg.text.equalsIgnoreCase(BUTTON_TG_TURN_OFF_OUTPUT1)) && (OUTPUT1_AS_EVENT == OUTPUT_AS_TELEGRAM)) {
-        trg_output1 = false;
-        new_st_output1 = true; // modifica lo stato dell'uscita
+        trg_output1 = true;
+        new_st_output1 = false; // modifica lo stato dell'uscita
       } else if ((msg.text.equalsIgnoreCase(BUTTON_TG_TURN_OFF_OUTPUT2)) && (OUTPUT2_AS_EVENT == OUTPUT_AS_TELEGRAM)) {
-        trg_output2 = false;
-        new_st_output2 = true; // modifica lo stato dell'uscita
+        trg_output2 = true;
+        new_st_output2 = false; // modifica lo stato dell'uscita
       } else if (msg.text.equalsIgnoreCase(BUTTON_TG_READ_INPUT1)) {
         String str = (ISSENSORESCLUSO(stato_input1)) ? MSG_TG_INPUT1_OFF : MSG_TG_INPUT1_ON;
         myBot.sendMessage(msg,  str);

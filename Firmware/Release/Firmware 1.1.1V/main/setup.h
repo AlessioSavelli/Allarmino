@@ -11,7 +11,7 @@
 
   -I messaggi di avviso telegram e email sono preconfigurati e si possono modificare direttamente da codice nei rispettivi file CustomMessage.h
 */
-#define FW_VERSION "1.1V"
+#define FW_VERSION "1.1.1V"
 
 //Configurazione pin-out board
 #define SIRENA  33

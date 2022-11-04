@@ -59,8 +59,8 @@ Public Class settingsCompilatore
             IDECheck.Text = "NO"
         End If
         Dim ESPRoot As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\IDEPortable\hardwareesp32\tools\esptool_py"
-        If IO.Directory.Exists(Environment.CurrentDirectory & "\IDEPortable") Then
-            ESPRoot = Environment.CurrentDirectory & "\IDEPortable\hardware\ESPp\packages\esp32\tools\esptool_py"
+        If IO.Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\IDEPortable") Then
+            ESPRoot = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\IDEPortable\hardware\ESPp\packages\esp32\tools\esptool_py"
 
         End If
 
@@ -72,7 +72,7 @@ Public Class settingsCompilatore
             IDEESPCheck.Text = "ASSENTE"
         End If
 
-        If percorsoIDE.Text = Environment.CurrentDirectory & "\IDEPortable" Then
+        If percorsoIDE.Text = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\IDEPortable" Then
             GroupBox2.Enabled = False
         Else
             GroupBox2.Enabled = True
@@ -137,8 +137,8 @@ Public Class settingsCompilatore
         Invoke(Sub() aggiornoAllinemantoLib())
     End Sub
     Private Function SeachArduinoFolder() As String
-        If IO.Directory.Exists(Environment.CurrentDirectory & "\IDEPortable") Then
-            Return Environment.CurrentDirectory & "\IDEPortable"
+        If IO.Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\IDEPortable") Then
+            Return Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\IDEPortable"
         Else
             Dim mainRoots() As String = Directory.GetLogicalDrives()
             For Each mainRoot As String In mainRoots

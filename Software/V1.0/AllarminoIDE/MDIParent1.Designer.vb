@@ -374,7 +374,7 @@ Partial Class MDIParent1
         Me.MainMenuStrip = Me.MenuStrip
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MDIParent1"
-        Me.Text = "Configuratore V1.0"
+        Me.Text = "Configuratore V1.0.0.1"
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
         Me.ToolStrip.ResumeLayout(False)

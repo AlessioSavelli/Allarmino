@@ -63,16 +63,16 @@ Public NotInheritable Class SplashScreen
 
         End If
         'controlla se esiste l'ide
-        If Not IO.Directory.Exists(Environment.CurrentDirectory & "\IDEPortable") Then
+        If Not IO.Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\IDEPortable") Then
             'estrazione dell'ide
             Invoke(Sub() Copyright.Text = "Creazione dell'IDE...")
             Thread.Sleep(2000)
-            Dim stream As IO.FileStream = IO.File.Create(Environment.CurrentDirectory & "\ide.zip")
+            Dim stream As IO.FileStream = IO.File.Create(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\ide.zip")
             stream.Write(My.Resources.IDEPortable, 0, My.Resources.IDEPortable.Length)
             stream.Dispose()
             stream.Close()
-            IO.Compression.ZipFile.ExtractToDirectory(Environment.CurrentDirectory & "\ide.zip", Environment.CurrentDirectory)
-            IO.File.Delete(Environment.CurrentDirectory & "\ide.zip")
+            IO.Compression.ZipFile.ExtractToDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\ide.zip", Environment.CurrentDirectory)
+            IO.File.Delete(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\ide.zip")
         End If
 
         Invoke(Sub() Copyright.Text = "Controllo Aggiornamenti...")
@@ -82,6 +82,5 @@ Public NotInheritable Class SplashScreen
         Thread.Sleep(2500)
         Invoke(Sub() Me.DialogResult = DialogResult.OK)
     End Sub
-
 
 End Class

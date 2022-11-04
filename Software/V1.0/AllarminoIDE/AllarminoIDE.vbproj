@@ -18,10 +18,12 @@
     <Description>Suite per gestione firmware di Allarmino, progetto pubblicato su Elettronica In da Alessio Savelli.</Description>
     <Copyright>Licenza MIT Copyright (c) 2022 Alessio Savelli FuturaGroup</Copyright>
     <PackageLicenseFile>LICENZA.txt</PackageLicenseFile>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.0.1</Version>
     <PackageIcon>logo.png</PackageIcon>
     <PackageIconUrl />
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -34,6 +36,10 @@
 
   <ItemGroup>
     <None Remove="ico.ico" />
+    <None Remove="Resources\information.png" />
+    <EmbeddedResource Include="Resources\information.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="..\Icon Source\logo.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>

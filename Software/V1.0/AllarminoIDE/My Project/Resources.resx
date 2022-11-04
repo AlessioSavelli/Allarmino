@@ -136,9 +136,6 @@
   <data name="carica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IDEPortable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\IDEPortable.zip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="carica4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carica4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,13 +187,16 @@
   <data name="SMTP_LIST" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SMTP_LIST.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Resource" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Resource.zip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Icon Source\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\info.inf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Resource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.zip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="IDEPortable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\IDEPortable.zip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

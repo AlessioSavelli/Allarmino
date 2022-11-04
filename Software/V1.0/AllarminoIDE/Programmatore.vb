@@ -100,10 +100,10 @@
         reader.Close()
         reader.Dispose()
 
-        If IO.Directory.Exists(Environment.CurrentDirectory & "\IDEPortable\hardware\ESPp\packages") Then ' usa il compilatore ESP32 portatile
+        If IO.Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\IDEPortable\hardware\ESPp\packages") Then ' usa il compilatore ESP32 portatile
             espfolder = arduinofolder & "\hardware\ESPp\packages"
         Else
-            errorMessage("Esp32 tools not found in : " & Environment.CurrentDirectory & "\IDEPortable\hardware\ESPp\packages")
+            errorMessage("Esp32 tools not found in : " & Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) & "\IDEPortable\hardware\ESPp\packages")
             Exit Sub
         End If
 #End Region
@@ -374,6 +374,24 @@
             errorMessage("Error, invalid upload")
             Exit Sub
         End If
+#End Region
+
+#Region "Eliminazione cartelle superflue"
+        IO.Directory.Delete(ProjectDir & "\build\out\core")
+        IO.Directory.Delete(ProjectDir & "\build\out\libraries")
+        IO.Directory.Delete(ProjectDir & "\build\out\preproc")
+        IO.Directory.Delete(ProjectDir & "\build\out\sketch")
+
+        IO.File.Delete(ProjectDir & "\build\out\build.options.json")
+        IO.File.Delete(ProjectDir & "\build\out\build_opt.h")
+        IO.File.Delete(ProjectDir & "\build\out\includes.cache")
+        IO.File.Delete(ProjectDir & "\build\out\main.ino.bootloader.bin")
+        IO.File.Delete(ProjectDir & "\build\out\partitions.csv")
+        IO.File.Delete(ProjectDir & "\build\out\main.ino.elf")
+        IO.File.Delete(ProjectDir & "\build\out\main.ino.map")
+        IO.File.Delete(ProjectDir & "\build\out\main.ino.partitions.bin")
+
+
 #End Region
 
         Invoke(Sub() Button1.Enabled = True)

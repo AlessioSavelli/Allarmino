@@ -175,7 +175,7 @@ Namespace My.Resources
         '''--------------------
         '''Versioni FW. di allarmino disponibili :
         '''	-1.0V
-        '''	-1.1V
+        '''	-1.1.2V
         '''Compatibilita&apos; Hardware solo con ESP32 DevKit
         '''
         '''[GitHubLink]https://github.com/AlessioSavelli/Allarmino.

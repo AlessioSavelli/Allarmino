@@ -3,22 +3,94 @@
 In questa sezione troverai tutti i sorgenti Hardware, Software e Firmware per creare e utilizzare il tuo allarmino.
 
 le riviste ElettronicaIN:
--Rivista Nr264 parla della main board Allarmino basta su un ESP32
--Rivista Nr2XX parla della scheda di espansione 01 di Allarmino e del primo approccio alla versione del Software AllarminoIDE.
-
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Rivista Nr264 parla della main board Allarmino basta su un ESP32</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Rivista Nr2XX parla della scheda di espansione 01 di Allarmino e del primo approccio alla versione del Software AllarminoIDE</td>
+  </tr>
+</tbody>
+</table>
 
 I Firmware disponibili per ESP32:
-  -V1.0
-  -V1.1
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Firmware</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">V1.0</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">V1.1.2</td>
+  </tr>
+</tbody>
+</table>
+I Firmware non più disponibili per ESP32:
+ <table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Firmware</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">V1.1</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">V1.1.1</td>
+  </tr>
+</tbody>
+</table>
   
 I Software disponibili :
-  -V1.0 (Testato solo su Windows 11 64bit)
+  <table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Software</th>
+    <th class="tg-0pky">Testato su</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">V1.0.0.1</td>
+    <td class="tg-0pky">Win10 64-bit, Win 11 64-bit</td>
+  </tr>
+</tbody>
+</table>
+I Software non più disponibili :
+ <table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Software</th>
+    <th class="tg-0pky">Testato su</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">V1.0</td>
+    <td class="tg-0pky">Win 11 64-bit</td>
+  </tr>
+</tbody>
+</table>
   
 Gli Hardware disponibili :
-  -Allarmino Main Board
-  -Espansione 01 (CAN BUS 2.0B + Ethernet W5500 o ENC28J60)
-  
-  
+<table class="tg">
+<thead>
+  <tr>
+    <td class="tg-0lax">Allarmino Main Board</td>
+    <td class="tg-0pky">Espansione 01 <br>(CAN BUS 2.0B + Ethernet W5500 <br>ENC28J60)</td>
+  </tr>
+</thead>
+</table>
+
+Datasheet disponibile  https://github.com/AlessioSavelli/Allarmino/tree/main/Datasheet/Allarmino
 
 ----------------------------------------------------------
 Licenza MIT

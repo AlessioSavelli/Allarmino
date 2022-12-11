@@ -6,7 +6,7 @@ le riviste ElettronicaIN:
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0lax">Rivista Nr264 parla della main board Allarmino basta su un ESP32</th>
+    <th class="tg-0lax"><a href="https://futuranet.it/prodotto/n-264-maggio-2022/">Rivista Nr264</a> parla della main board Allarmino basta su un ESP32</th>
   </tr>
 </thead>
 <tbody>
@@ -90,8 +90,7 @@ Gli Hardware disponibili :
 </thead>
 </table>
 
-Datasheet disponibile  https://github.com/AlessioSavelli/Allarmino/tree/main/Datasheet/Allarmino
-
+<a href="https://github.com/AlessioSavelli/Allarmino/tree/main/Datasheet/Allarmino/">Datasheet disponibile. (CLICCA QUI)</a>
 ----------------------------------------------------------
 Licenza MIT
 Copyright (c) 2022 Alessio Savelli FuturaGroup

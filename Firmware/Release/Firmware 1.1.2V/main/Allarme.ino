@@ -18,7 +18,7 @@ void loop_allarme() {
 
   String notify_message_allarme = "";
 
-  static bool startup_flag = false;
+  //static bool startup_flag = false;
 
   if ((stato_key_allarme == ST_DISATTIVA_ALLARME) && (ST_allarme != ST_ALLARME_WAIT_KEY) && (ST_allarme != ST_ALLARME_TAMPER_MANOMESSO)) {
     ST_allarme = ST_ALLARME_RESET_ALL ;//(startup_flag) ? (ST_ALLARME_RESET_ALL) : (ST_ALLARME_WAIT_KEY); // Resetta l'algorittimo dell'allarme se necessario , altrimenti rimane nello stato di ST_ALLARME_WAIT_KEY
@@ -101,12 +101,12 @@ void loop_allarme() {
       //Salvo la maschera dei sensori autoescludibili applicando la maschera dei sensori attualmente in allarme
       mask_esclusioni = map_sensor & mask_esclusioni; // Salvo la maschera dei sensori in allamre che possono andare in autoesclusione
       //Attualizzo lo stato dei sensori in modalità auto esclusa
-      SETAUTOESCLUSIONE((GETBIT8(mask_esclusioni, BIT_ZONE1)) ? ( AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO), stato_zona1);
-      SETAUTOESCLUSIONE((GETBIT8(mask_esclusioni, BIT_ZONE2)) ? ( AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO), stato_zona2);
-      SETAUTOESCLUSIONE((GETBIT8(mask_esclusioni, BIT_ZONE3)) ? ( AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO), stato_zona3);
-      SETAUTOESCLUSIONE((GETBIT8(mask_esclusioni, BIT_ZONE4)) ? ( AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO), stato_zona4);
+      SETAUTOESCLUSIONE(((GETBIT8(mask_esclusioni, BIT_ZONE1)) ? (AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO)), stato_zona1);
+      SETAUTOESCLUSIONE(((GETBIT8(mask_esclusioni, BIT_ZONE2)) ? (AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO)), stato_zona2);
+      SETAUTOESCLUSIONE(((GETBIT8(mask_esclusioni, BIT_ZONE3)) ? (AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO)), stato_zona3);
+      SETAUTOESCLUSIONE(((GETBIT8(mask_esclusioni, BIT_ZONE4)) ? (AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO)), stato_zona4);
 
-      SETAUTOESCLUSIONE((GETBIT8(mask_esclusioni, BIT_TAMPER)) ? ( AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO), stato_tamper);
+      SETAUTOESCLUSIONE(((GETBIT8(mask_esclusioni, BIT_TAMPER)) ? (AUTOESCLUSIONE_SI) : (AUTOESCLUSIONE_NO)), stato_tamper);
 
 
       if (map_sensor != mask_esclusioni) { //Allarme non attivabile

@@ -10,8 +10,8 @@ le riviste ElettronicaIN:
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td class="tg-0lax">Rivista Nr2XX parla della scheda di espansione 01 di Allarmino e del primo approccio alla versione del Software AllarminoIDE</td>
+  <tr> 
+    <td class="tg-0lax"><a href="https://futuranet.it/prodotto/n-271-febbraio-2023-marzo-2023">Rivista Nr271</a>  parla della scheda di espansione 01 di Allarmino e del primo approccio alla versione del Software AllarminoIDE</td>
   </tr>
 </tbody>
 </table>

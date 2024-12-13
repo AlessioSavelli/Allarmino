@@ -1,0 +1,1 @@
+[F!X] BUG, bug minore durante l'avvio della scheda

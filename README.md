@@ -17,7 +17,7 @@ Benvenuti nel progetto **Allarmino**! Qui troverai tutti i sorgenti **Hardware**
 |---------------|------------------|
 | V1.0          | Disponibile      |
 | V1.1.2        | Disponibile      |
-
+| V1.1.3        | Disponibile      |
 ### ❌ Firmware non più disponibili:
 
 | Versione      | Stato            |
@@ -31,13 +31,14 @@ Benvenuti nel progetto **Allarmino**! Qui troverai tutti i sorgenti **Hardware**
 
 | Versione      | Testato su                   |
 |---------------|------------------------------|
-| V1.0.0.1      | Win10 64-bit, Win11 64-bit   |
+| V1.0.0.2      | Win10 64-bit, Win11 64-bit   |
 
 ### ❌ Software non più disponibili:
 
 | Versione      | Testato su                   |
 |---------------|------------------------------|
 | V1.0          | Win11 64-bit                 |
+| V1.0.0.1      | Win10 64-bit, Win11 64-bit   |
 
 ---
 
